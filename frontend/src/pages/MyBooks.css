@@ -1,0 +1,383 @@
+.my-books-page {
+  min-height: 100vh;
+  background: #f7f9fc;
+  color: #172554;
+}
+
+.my-books-header {
+  background: #172d70;
+  border-bottom: 3px solid #d9a928;
+}
+
+.my-books-header-inner {
+  width: min(1180px, 92%);
+  min-height: 72px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-books-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.my-books-logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: #d9a928;
+  color: #172d70;
+}
+
+.my-books-browse {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.my-books-browse:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.my-books-main {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+  padding: 32px 0 60px;
+}
+
+.my-books-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #172d70;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.my-books-back:hover {
+  color: #b8860b;
+}
+
+.my-books-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.my-books-label {
+  display: inline-block;
+  color: #b8860b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  margin-bottom: 8px;
+}
+
+.my-books-heading h1 {
+  margin: 0;
+  color: #172d70;
+  font-size: 36px;
+  line-height: 1.15;
+}
+
+.my-books-heading p {
+  margin: 9px 0 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.my-books-count {
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  background: white;
+  border: 1px solid #e4e8f0;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(23, 45, 112, 0.06);
+  color: #172d70;
+}
+
+.my-books-count svg {
+  color: #d9a928;
+}
+
+.my-books-count div {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-books-count strong {
+  font-size: 20px;
+}
+
+.my-books-count span {
+  color: #64748b;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.my-books-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.my-book-card {
+  display: grid;
+  grid-template-columns: 125px 1fr;
+  gap: 24px;
+  padding: 22px;
+  background: white;
+  border: 1px solid #e4e8f0;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(23, 45, 112, 0.06);
+}
+
+.my-book-cover {
+  min-height: 165px;
+  border-radius: 10px;
+  background: #172d70;
+  border: 2px solid #d9a928;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f1ce65;
+  gap: 9px;
+}
+
+.my-book-cover span {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.my-book-content {
+  min-width: 0;
+}
+
+.my-book-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.my-book-category {
+  color: #b8860b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.my-book-top h2 {
+  margin: 5px 0 3px;
+  color: #172d70;
+  font-size: 23px;
+}
+
+.my-book-author {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.my-book-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.status-active {
+  background: #ecfdf3;
+  color: #15803d;
+}
+
+.status-overdue {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.my-book-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.my-book-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px;
+  background: #f8fafc;
+  border: 1px solid #edf0f5;
+  border-radius: 9px;
+}
+
+.my-book-detail svg {
+  flex-shrink: 0;
+  color: #b8860b;
+}
+
+.my-book-detail div {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-book-detail span {
+  color: #64748b;
+  font-size: 11px;
+}
+
+.my-book-detail strong {
+  margin-top: 3px;
+  color: #172554;
+  font-size: 13px;
+}
+
+.my-book-footer {
+  margin-top: 18px;
+  padding-top: 15px;
+  border-top: 1px solid #edf0f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.my-book-footer span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.my-book-view {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 15px;
+  background: #172d70;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.my-book-view:hover {
+  background: #203b8c;
+}
+
+.my-books-empty-note {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 17px;
+  background: #fffdf5;
+  border: 1px solid #f1df9c;
+  border-radius: 10px;
+}
+
+.my-books-empty-note svg {
+  flex-shrink: 0;
+  color: #b8860b;
+}
+
+.my-books-empty-note p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .my-books-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .my-books-count {
+    width: 100%;
+  }
+
+  .my-book-card {
+    grid-template-columns: 1fr;
+  }
+
+  .my-book-cover {
+    min-height: 190px;
+  }
+
+  .my-book-details {
+    grid-template-columns: 1fr;
+  }
+
+  .my-book-top {
+    flex-direction: column;
+  }
+
+  .my-book-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .my-book-view {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-books-main {
+    padding-top: 24px;
+  }
+
+  .my-books-heading h1 {
+    font-size: 30px;
+  }
+
+  .my-books-header-inner {
+    min-height: 64px;
+  }
+
+  .my-books-logo {
+    font-size: 19px;
+  }
+
+  .my-books-logo-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .my-books-browse {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .my-book-card {
+    padding: 16px;
+  }
+}

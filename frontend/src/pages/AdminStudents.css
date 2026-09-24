@@ -1,0 +1,315 @@
+.admin-students-page {
+  min-height: 100vh;
+  background: #f7f9fc;
+  color: #172554;
+}
+
+.admin-students-header {
+  background: #0b2a6f;
+  border-bottom: 3px solid #d4af37;
+  color: #ffffff;
+}
+
+.admin-students-header-inner {
+  max-width: 1400px;
+  min-height: 76px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.admin-students-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-students-back:hover {
+  color: #f1d77a;
+}
+
+.admin-students-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-students-logo {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #d4af37;
+  color: #0b2a6f;
+}
+
+.admin-students-brand h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.admin-students-brand span {
+  display: block;
+  margin-top: 2px;
+  color: #dce6fb;
+  font-size: 11px;
+}
+
+.admin-students-badge {
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  color: #f1d77a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.admin-students-main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 28px 60px;
+}
+
+.admin-students-eyebrow {
+  margin: 0 0 7px;
+  color: #b28a12;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.admin-students-title h2 {
+  margin: 0;
+  color: #102a66;
+  font-size: 32px;
+}
+
+.admin-students-title p:last-child {
+  margin: 8px 0 28px;
+  color: #667085;
+  font-size: 14px;
+}
+
+.admin-students-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.admin-students-stat {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #ffffff;
+  border: 1px solid #e3e9f3;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(11, 42, 111, 0.05);
+}
+
+.admin-students-stat > svg {
+  color: #b28a12;
+}
+
+.admin-students-stat span {
+  display: block;
+  color: #667085;
+  font-size: 13px;
+}
+
+.admin-students-stat strong {
+  display: block;
+  margin-top: 4px;
+  color: #0b2a6f;
+  font-size: 26px;
+}
+
+.admin-students-panel {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e3e9f3;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(11, 42, 111, 0.05);
+}
+
+.admin-students-toolbar {
+  padding: 20px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.admin-students-search {
+  max-width: 600px;
+  height: 44px;
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #d8dfeb;
+  border-radius: 8px;
+  color: #718096;
+}
+
+.admin-students-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #172554;
+}
+
+.admin-students-result {
+  padding: 14px 20px;
+  color: #667085;
+  font-size: 13px;
+}
+
+.admin-students-table-wrapper {
+  overflow-x: auto;
+}
+
+.admin-students-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+.admin-students-table th {
+  padding: 13px 18px;
+  background: #f6f8fc;
+  color: #596579;
+  font-size: 11px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.admin-students-table td {
+  padding: 15px 18px;
+  border-top: 1px solid #edf0f5;
+  color: #4b5563;
+  font-size: 13px;
+}
+
+.admin-student-info {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.admin-student-avatar {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #eaf0ff;
+  color: #0b2a6f;
+  font-weight: 800;
+}
+
+.admin-student-info strong {
+  display: block;
+  color: #172554;
+}
+
+.admin-student-info span {
+  display: block;
+  margin-top: 3px;
+  color: #7a8495;
+  font-size: 11px;
+}
+
+.admin-student-status {
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.admin-student-status.active {
+  background: #edf8f1;
+  color: #267044;
+}
+
+.admin-student-status.inactive {
+  background: #fff0f0;
+  color: #b42318;
+}
+
+.admin-student-toggle {
+  padding: 7px 11px;
+  border: 1px solid #d6deea;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #0b2a6f;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-student-toggle:hover {
+  background: #f5f7fb;
+}
+
+.admin-students-empty {
+  padding: 55px 20px;
+  text-align: center;
+  color: #7a8495;
+}
+
+.admin-students-empty svg {
+  color: #b28a12;
+}
+
+.admin-students-empty h3 {
+  margin: 12px 0 5px;
+  color: #172554;
+}
+
+.admin-students-empty p {
+  margin: 0;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .admin-students-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .admin-students-header-inner {
+    padding: 14px 18px;
+    flex-wrap: wrap;
+  }
+
+  .admin-students-brand {
+    order: -1;
+    width: 100%;
+  }
+
+  .admin-students-badge {
+    display: none;
+  }
+
+  .admin-students-main {
+    padding: 30px 16px 45px;
+  }
+
+  .admin-students-title h2 {
+    font-size: 27px;
+  }
+
+  .admin-students-search {
+    max-width: none;
+  }
+}

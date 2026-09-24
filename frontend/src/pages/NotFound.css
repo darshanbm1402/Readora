@@ -1,0 +1,145 @@
+.not-found-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background: #f7f9fc;
+}
+
+.not-found-card {
+  width: min(520px, 100%);
+  padding: 42px 35px;
+  text-align: center;
+  background: white;
+  border: 1px solid #e4e8f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(23, 45, 112, 0.08);
+}
+
+.not-found-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #172d70;
+  font-size: 21px;
+  font-weight: 800;
+  margin-bottom: 35px;
+}
+
+.not-found-logo-icon {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #d9a928;
+  color: #172d70;
+}
+
+.not-found-icon {
+  width: 78px;
+  height: 78px;
+  margin: 0 auto 17px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff8dc;
+  color: #b8860b;
+}
+
+.not-found-code {
+  display: block;
+  color: #172d70;
+  font-size: 58px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.not-found-card h1 {
+  margin: 9px 0 8px;
+  color: #172554;
+  font-size: 25px;
+}
+
+.not-found-card p {
+  max-width: 390px;
+  margin: 0 auto;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.not-found-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.not-found-home-button,
+.not-found-books-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 11px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.not-found-home-button {
+  background: #172d70;
+  color: white;
+}
+
+.not-found-home-button:hover {
+  background: #203b8c;
+}
+
+.not-found-books-button {
+  background: #fffdf5;
+  color: #8a6500;
+  border: 1px solid #d9a928;
+}
+
+.not-found-books-button:hover {
+  background: #fff8dc;
+}
+
+.not-found-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 24px;
+  color: #64748b;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.not-found-back:hover {
+  color: #172d70;
+}
+
+@media (max-width: 480px) {
+  .not-found-card {
+    padding: 32px 20px;
+  }
+
+  .not-found-actions {
+    flex-direction: column;
+  }
+
+  .not-found-home-button,
+  .not-found-books-button {
+    width: 100%;
+  }
+
+  .not-found-code {
+    font-size: 50px;
+  }
+}

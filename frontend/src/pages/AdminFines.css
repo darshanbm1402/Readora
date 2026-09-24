@@ -1,0 +1,436 @@
+.admin-fines-page {
+  min-height: 100vh;
+  background: #f7f9fc;
+  color: #172554;
+}
+
+/* ======================================================
+   HEADER
+====================================================== */
+
+.admin-fines-header {
+  min-height: 76px;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #0b2a6f;
+  border-bottom: 3px solid #d4af37;
+  color: #fff;
+}
+
+.admin-fines-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-fines-back:hover {
+  color: #f1d77a;
+}
+
+.admin-fines-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-fines-logo {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #d4af37;
+  color: #0b2a6f;
+}
+
+.admin-fines-brand h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.admin-fines-brand span {
+  font-size: 11px;
+  color: #dce6fb;
+}
+
+.admin-fines-badge {
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  color: #f1d77a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ======================================================
+   MAIN
+====================================================== */
+
+.admin-fines-main {
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 28px 60px;
+}
+
+.admin-fines-eyebrow {
+  margin: 0 0 7px;
+  color: #b28a12;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.admin-fines-main h2 {
+  margin: 0;
+  color: #102a66;
+  font-size: 32px;
+}
+
+.admin-fines-description {
+  margin: 8px 0 0;
+  color: #667085;
+  font-size: 14px;
+}
+
+/* ======================================================
+   ERROR
+====================================================== */
+
+.admin-fines-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0;
+  padding: 14px 16px;
+  border: 1px solid #f0caca;
+  border-radius: 10px;
+  background: #fff5f5;
+  color: #b42318;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ======================================================
+   STATS
+====================================================== */
+
+.admin-fines-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.admin-fines-card {
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #e3e9f3;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(11, 42, 111, 0.05);
+}
+
+.admin-fines-card span {
+  color: #667085;
+  font-size: 13px;
+}
+
+.admin-fines-card strong {
+  display: block;
+  margin-top: 8px;
+  color: #0b2a6f;
+  font-size: 27px;
+}
+
+/* ======================================================
+   PANEL
+====================================================== */
+
+.admin-fines-panel {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e3e9f3;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(11, 42, 111, 0.05);
+}
+
+/* ======================================================
+   PANEL HEADER
+====================================================== */
+
+.admin-fines-panel-title {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.admin-fines-panel-title h3 {
+  margin: 0;
+  color: #102a66;
+  font-size: 18px;
+}
+
+.admin-fines-panel-title p {
+  margin: 5px 0 0;
+  color: #8a94a6;
+  font-size: 12px;
+}
+
+/* ======================================================
+   SEARCH
+====================================================== */
+
+.admin-fines-search {
+  width: 280px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 12px;
+  border: 1px solid #dce3ef;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.admin-fines-search svg {
+  flex-shrink: 0;
+  color: #8a94a6;
+}
+
+.admin-fines-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #172554;
+  font-size: 13px;
+}
+
+.admin-fines-search input::placeholder {
+  color: #98a2b3;
+}
+
+/* ======================================================
+   TABLE
+====================================================== */
+
+.admin-fines-table-wrapper {
+  overflow-x: auto;
+}
+
+.admin-fines-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+}
+
+.admin-fines-table th {
+  padding: 14px 20px;
+  background: #f6f8fc;
+  color: #596579;
+  font-size: 11px;
+  font-weight: 800;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.admin-fines-table td {
+  padding: 16px 20px;
+  border-top: 1px solid #edf0f5;
+  color: #4b5563;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.admin-fines-table tbody tr:hover {
+  background: #fafcff;
+}
+
+.admin-fines-table td strong {
+  display: block;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.admin-fines-table td small {
+  display: block;
+  margin-top: 4px;
+  color: #8a94a6;
+  font-size: 11px;
+}
+
+/* ======================================================
+   FINE AMOUNT
+====================================================== */
+
+.admin-fines-table td:nth-child(5) strong {
+  color: #b28a12;
+  font-size: 14px;
+}
+
+/* ======================================================
+   STATUS
+====================================================== */
+
+.admin-fines-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.admin-fines-status.pending {
+  background: #fff8df;
+  color: #8a6910;
+}
+
+.admin-fines-status.recorded {
+  background: #edf8f1;
+  color: #267044;
+}
+
+/* ======================================================
+   EMPTY / LOADING
+====================================================== */
+
+.admin-fines-empty {
+  min-height: 240px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #8a94a6;
+}
+
+.admin-fines-empty svg {
+  margin-bottom: 10px;
+  color: #b28a12;
+}
+
+.admin-fines-empty h3 {
+  margin: 5px 0;
+  color: #344054;
+  font-size: 16px;
+}
+
+.admin-fines-empty p {
+  margin: 5px 0 0;
+  color: #8a94a6;
+  font-size: 13px;
+}
+
+/* ======================================================
+   INFORMATION NOTE
+====================================================== */
+
+.admin-fines-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 18px 20px;
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+  background: #f9fbff;
+  color: #596579;
+}
+
+.admin-fines-note > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #b28a12;
+}
+
+.admin-fines-note strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #344054;
+  font-size: 13px;
+}
+
+.admin-fines-note p {
+  margin: 0;
+  color: #667085;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 900px) {
+  .admin-fines-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-fines-panel-title {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .admin-fines-search {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-fines-header {
+    min-height: auto;
+    padding: 14px 18px;
+    flex-wrap: wrap;
+  }
+
+  .admin-fines-brand {
+    order: -1;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .admin-fines-badge {
+    display: none;
+  }
+
+  .admin-fines-main {
+    padding: 30px 16px 45px;
+  }
+
+  .admin-fines-main h2 {
+    font-size: 26px;
+  }
+
+  .admin-fines-card {
+    padding: 18px;
+  }
+
+  .admin-fines-card strong {
+    font-size: 24px;
+  }
+
+  .admin-fines-panel-title {
+    padding: 16px;
+  }
+
+  .admin-fines-table th,
+  .admin-fines-table td {
+    padding: 13px 14px;
+  }
+
+  .admin-fines-note {
+    padding: 16px;
+  }
+}

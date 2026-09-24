@@ -1,0 +1,378 @@
+.verify-page {
+  min-height: 100vh;
+  display: flex;
+  background: #f7f9fc;
+}
+
+/* =========================
+   BRANDING
+========================= */
+
+.verify-brand {
+  width: 45%;
+  min-height: 100vh;
+  background: #172d70;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.verify-brand::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(255, 215, 100, 0.18);
+  border-radius: 50%;
+  top: -150px;
+  left: -150px;
+}
+
+.verify-brand::after {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  border: 1px solid rgba(255, 215, 100, 0.12);
+  border-radius: 50%;
+  bottom: -260px;
+  right: -260px;
+}
+
+.verify-brand-content {
+  max-width: 470px;
+  position: relative;
+  z-index: 1;
+}
+
+.verify-brand-logo {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d9a928;
+  color: #172d70;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+.verify-brand-content h1 {
+  font-size: 48px;
+  margin: 0 0 18px;
+  font-weight: 750;
+  letter-spacing: -1.5px;
+}
+
+.verify-brand-tagline {
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0 0 32px;
+  max-width: 420px;
+}
+
+.verify-brand-feature {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #f1ce65;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* =========================
+   VERIFICATION AREA
+========================= */
+
+.verify-container {
+  flex: 1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+}
+
+.verify-card {
+  width: 100%;
+  max-width: 450px;
+}
+
+.verify-header {
+  margin-bottom: 28px;
+}
+
+.verify-label {
+  color: #b8860b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.verify-icon {
+  width: 58px;
+  height: 58px;
+  margin-top: 18px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #eef2ff;
+  color: #172d70;
+}
+
+.verify-header h2 {
+  color: #172d70;
+  font-size: 32px;
+  margin: 0 0 9px;
+  font-weight: 750;
+  letter-spacing: -0.6px;
+}
+
+.verify-header p {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.verify-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.verify-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.verify-form-group label {
+  color: #24345d;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.verify-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.verify-input-icon {
+  position: absolute;
+  left: 15px;
+  color: #71809e;
+  pointer-events: none;
+}
+
+.verify-input-wrapper input {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #d7deeb;
+  border-radius: 10px;
+  outline: none;
+  background: #ffffff;
+  color: #172554;
+  padding: 0 45px;
+  font-size: 14px;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+}
+
+.verify-input-wrapper input::placeholder {
+  color: #9aa5b8;
+}
+
+.verify-input-wrapper input:focus {
+  border-color: #3454a4;
+  box-shadow: 0 0 0 3px rgba(52, 84, 164, 0.1);
+}
+
+/* =========================
+   MESSAGES
+========================= */
+
+.verify-error,
+.verify-success {
+  padding: 11px 13px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.verify-error {
+  background: #fff1f2;
+  color: #be123c;
+  border: 1px solid #fecdd3;
+}
+
+.verify-success {
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.verify-button {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 10px;
+  background: #172d70;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 2px;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.verify-button:hover:not(:disabled) {
+  background: #243e8c;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(23, 45, 112, 0.18);
+}
+
+.verify-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* =========================
+   RESEND
+========================= */
+
+.resend-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.resend-button {
+  border: none;
+  background: none;
+  color: #b8860b;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.resend-button:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+.resend-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   BACK TO LOGIN
+========================= */
+
+.verify-back-login {
+  display: block;
+  width: fit-content;
+  margin: 27px auto 0;
+  color: #64748b;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.verify-back-login:hover {
+  color: #172d70;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+  .verify-brand {
+    width: 40%;
+    padding: 35px;
+  }
+
+  .verify-brand-content h1 {
+    font-size: 38px;
+  }
+
+  .verify-brand-tagline {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 680px) {
+  .verify-page {
+    display: block;
+  }
+
+  .verify-brand {
+    width: 100%;
+    min-height: auto;
+    padding: 38px 25px;
+  }
+
+  .verify-brand-logo {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 17px;
+  }
+
+  .verify-brand-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .verify-brand-tagline {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .verify-brand-feature {
+    font-size: 13px;
+  }
+
+  .verify-container {
+    min-height: auto;
+    padding: 45px 22px;
+  }
+
+  .verify-header h2 {
+    font-size: 28px;
+  }
+
+  .resend-section {
+    flex-direction: column;
+    gap: 7px;
+  }
+}
+

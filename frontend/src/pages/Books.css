@@ -1,0 +1,473 @@
+/* =========================================================
+   READORA - BOOKS PAGE
+========================================================= */
+
+.books-page {
+  min-height: 100vh;
+  background: #f7f9fc;
+  color: #172554;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.books-header {
+  background: #172d70;
+  color: #ffffff;
+  border-bottom: 3px solid #d9a928;
+}
+
+.books-header-content {
+  width: min(1180px, 92%);
+  min-height: 76px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.books-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 750;
+}
+
+.books-logo svg {
+  color: #f1ce65;
+}
+
+.books-login-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 650;
+  transition: 0.2s ease;
+}
+
+.books-login-btn:hover {
+  background: #ffffff;
+  color: #172d70;
+}
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.books-container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+  padding: 48px 0 70px;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.books-hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 32px;
+}
+
+.books-hero h1 {
+  margin: 0 0 9px;
+  color: #172d70;
+  font-size: 32px;
+  letter-spacing: -0.7px;
+}
+
+.books-hero p {
+  margin: 0;
+  max-width: 650px;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.books-count {
+  min-width: 155px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background: #ffffff;
+  border: 1px solid #e2e7f0;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(23, 45, 112, 0.05);
+}
+
+.books-count strong {
+  color: #172d70;
+  font-size: 20px;
+}
+
+.books-count span {
+  color: #7b879b;
+  font-size: 11px;
+}
+
+/* =========================================================
+   SEARCH & CATEGORY
+========================================================= */
+
+.books-controls {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 34px;
+}
+
+.books-search {
+  flex: 1;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 16px;
+  background: #ffffff;
+  border: 1px solid #d9e0ec;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.books-search:focus-within {
+  border-color: #3454a4;
+  box-shadow: 0 0 0 3px rgba(52, 84, 164, 0.09);
+}
+
+.books-search svg {
+  flex-shrink: 0;
+  color: #71809e;
+}
+
+.books-search input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #172554;
+  font-size: 14px;
+}
+
+.books-search input::placeholder {
+  color: #9aa5b8;
+}
+
+.books-category {
+  width: 220px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.books-category select {
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 14px;
+  border: 1px solid #d9e0ec;
+  outline: none;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.books-category select:focus {
+  border-color: #3454a4;
+  box-shadow: 0 0 0 3px rgba(52, 84, 164, 0.09);
+}
+
+/* =========================================================
+   LOADING / ERROR / EMPTY
+========================================================= */
+
+.books-message {
+  min-height: 280px;
+  background: #ffffff;
+  border: 1px solid #e1e6ef;
+  border-radius: 13px;
+  padding: 60px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 5px 18px rgba(23, 45, 112, 0.04);
+}
+
+.books-message svg {
+  color: #3454a4;
+  margin-bottom: 12px;
+}
+
+.books-message h3 {
+  margin: 4px 0 7px;
+  color: #172d70;
+  font-size: 18px;
+}
+
+.books-message p {
+  margin: 0;
+  color: #7b879b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.books-error svg {
+  color: #b45309;
+}
+
+.books-login-message-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #172d70;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.books-login-message-btn:hover {
+  background: #243d88;
+}
+
+/* =========================================================
+   LOADING SPINNER
+========================================================= */
+
+.loading-spinner {
+  animation: books-spin 1s linear infinite;
+}
+
+@keyframes books-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================================
+   BOOK GRID
+========================================================= */
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.book-card {
+  background: #ffffff;
+  border: 1px solid #e1e6ef;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(23, 45, 112, 0.045);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(23, 45, 112, 0.1);
+}
+
+/* =========================================================
+   BOOK COVER
+========================================================= */
+
+.book-cover {
+  height: 175px;
+  background: #eef2fb;
+  color: #172d70;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid #e2e7f0;
+}
+
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-cover svg {
+  color: #b8860b;
+}
+
+/* =========================================================
+   BOOK CONTENT
+========================================================= */
+
+.book-card-content {
+  padding: 18px;
+}
+
+.book-category {
+  display: inline-block;
+  color: #3454a4;
+  background: #eef2fb;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 11px;
+}
+
+.book-card h2 {
+  margin: 0;
+  color: #172d70;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.book-author {
+  margin: 6px 0 16px;
+  color: #7b879b;
+  font-size: 12px;
+}
+
+/* =========================================================
+   BOOK META
+========================================================= */
+
+.book-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.book-meta > span:first-child {
+  color: #8a95a8;
+  font-size: 10px;
+}
+
+.book-available,
+.book-unavailable {
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.book-available {
+  color: #16805c;
+}
+
+.book-unavailable {
+  color: #b45309;
+}
+
+/* =========================================================
+   DETAILS BUTTON
+========================================================= */
+
+.book-details-btn {
+  width: 100%;
+  min-height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid #d2dbea;
+  border-radius: 8px;
+  color: #172d70;
+  background: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.book-details-btn:hover {
+  background: #172d70;
+  border-color: #172d70;
+  color: #ffffff;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+  .books-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .books-hero {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .books-count {
+    width: 100%;
+  }
+
+  .books-controls {
+    flex-direction: column;
+  }
+
+  .books-category {
+    width: 100%;
+  }
+
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .books-container {
+    width: 90%;
+    padding-top: 35px;
+  }
+
+  .books-header-content {
+    min-height: 68px;
+  }
+
+  .books-hero h1 {
+    font-size: 27px;
+  }
+
+  .books-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .books-logo {
+    font-size: 18px;
+  }
+
+  .books-login-btn {
+    padding: 8px 13px;
+  }
+}
